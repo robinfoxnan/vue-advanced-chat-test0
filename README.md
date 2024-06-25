@@ -1,2 +1,24 @@
-# vue-advanced-chat-test0
-vue-advanced-chat 的一个入门级别测试，没有使用后端，使用了最简单的伪数据
+# web-bird-client
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
