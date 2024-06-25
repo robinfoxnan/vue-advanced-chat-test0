@@ -277,9 +277,9 @@
 					size: file.size,
 					type: file.type,
 					extension: file.extension || file.type,
-					//url: file.url || file.localUrl
+					url: file.url || file.localUrl
           // 注意，这里设置了HTTP的图片地址后，能正确加载，证明上传完毕，上传过程就停止了，不转了
-          url :"https://img0.baidu.com/it/u=1746301175,572912059&fm=253&fmt=auto&app=120&f=JPEG?w=580&h=500"
+          //url :"https://img0.baidu.com/it/u=1746301175,572912059&fm=253&fmt=auto&app=120&f=JPEG?w=580&h=500"
 				}
 
 				if (file.audio) {
