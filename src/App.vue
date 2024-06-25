@@ -1,6 +1,21 @@
 <template>
   <vue-advanced-chat
     ref="chat"
+    :text-messages="JSON.stringify({
+        ROOMS_EMPTY: $t('ROOMS_EMPTY'),
+        ROOM_EMPTY: $t('ROOM_EMPTY'),
+        NEW_MESSAGES: $t('NEW_MESSAGES'),
+        MESSAGE_DELETED: $t('MESSAGE_DELETED'),
+        MESSAGES_EMPTY: $t('MESSAGES_EMPTY'),
+        CONVERSATION_STARTED: $t('CONVERSATION_STARTED'),
+        TYPE_MESSAGE: $t('TYPE_MESSAGE'),
+        SEARCH: $t('SEARCH'),
+        IS_ONLINE: $t('IS_ONLINE'),
+        LAST_SEEN: $t('LAST_SEEN'),
+        IS_TYPING: $t('IS_TYPING'),
+        CANCEL_SELECT_MESSAGE: $t('CANCEL_SELECT_MESSAGE')
+      })"
+
     :current-user-id="currentUserId"
     :rooms="JSON.stringify(rooms)"
     :messages="roomMessages"
@@ -16,6 +31,9 @@
     @add-room="addRoom($event.detail[0])"
     @fetch-messages="fetchMessages($event.detail[0])"
     @send-message="sendMessage($event.detail[0])"
+    
+
+ 
 
     
   />
@@ -94,7 +112,7 @@
     senderId: users["2"]._id,
     username: users["2"].username,
     avatar: users["2"].avatar,
-    date: '13 November',
+    date: '11 月3 日',
     timestamp: '10:20',
     system: false,
     saved: true,
@@ -121,6 +139,9 @@
         roomId : "1",
         currentMsgSeq:1,
         roomMessage:"",
+      //   zhText: {
+          
+      // },
       
         rooms: [{
               roomId: '1',
@@ -229,7 +250,7 @@
         avatar: u.avatar,
         content: content,
 				timestamp: formatDate(new Date()),
-        date: '13 November',
+        date: '6月25日',
       system: false,
       saved: true,
       distributed: true,
